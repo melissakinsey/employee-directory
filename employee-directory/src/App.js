@@ -3,7 +3,7 @@ import Nav from "./components/Nav/Nav.jsx"
 import Table from "./components/Table/Table.jsx"
 class App extends React.component
 {
- // Set up constructor to accept data array
+  // Set up constructor to accept data array
   constructor()
   {
     super();
@@ -13,9 +13,9 @@ class App extends React.component
   componentWillMount()
   {
     fetch('https://randomuser.me/api')
-      .then(response => response.json())
-  // Use results to set state
-      .then(({results: items}) => this.setState({items}))
+    .then(response => response.json())
+    // Use results to set state
+    .then(({results: items}) => this.setState({items}))
   }
   // Use filter method to listen for filter event (e) and accept input field (e.target.value)
   filter(e) {
@@ -23,7 +23,7 @@ class App extends React.component
   }
   // Use render method
   render()
- 
+  
   {
     let items = this.state.items;
     // Filter results by date of birth (dob)
@@ -32,48 +32,46 @@ class App extends React.component
         item.dob()
         .includes(this.state.filter())
         )
-      
-    }
-    //Map items in the array returned from the API call
-    return (
+      }
+      //Map items in the array returned from the API call
       // Use email as unique key to identify each result returned
       //Filter by dob
-
+    return (
       <div>
-        <input type="text" onChange={this.filter.bind(this)} />"
-        {items.map(item => <p key={item.email}>{item.name}</p>)}
-      </div>
-    )
-
-  }
-}
-
-
-function Nav()
-{
-  return (
-    <div className="Nav">
-      <Nav/>
-    </div>
-  );
-}
-export default Nav;
-
-function Table ()
-{
-  return (
-    <div className="Table">
-      <Table/>
-    </div>
-  );
-}
-export default Table;
-function App ()
-{
-  return (
-    <div className="App">
-      <App/>
-    </div>
-  );
-}
-export default App;
+        <input type="text" onChange />
+          {items.map(item =>
+            <Person key={item.email} person={item} />)}
+        </div>
+        )
+      }
+    }
+    
+    function Nav()
+    {
+      return (
+        <div className="Nav">
+        <Nav/>
+        </div>
+        );
+      }
+      export default Nav;
+      
+      function Table ()
+      {
+        return (
+          <div className="Table">
+          <Table/>
+          </div>
+          );
+        }
+        export default Table;
+        function App ()
+        {
+          return (
+            <div className="App">
+            <App/>
+            </div>
+            );
+          }
+          export default App;
+          
