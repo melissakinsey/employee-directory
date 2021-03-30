@@ -39,7 +39,7 @@ class App extends React.component
       //Filter by dob
 
       <div>
-        <input type="text onChange />"
+        <input type="text" onChange={this.filter.bind(this)} />"
         {items.map(item => <p key={item.email}>{item.name}</p>)}
       </div>
     )
