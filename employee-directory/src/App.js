@@ -68,3 +68,12 @@ function Table ()
   );
 }
 export default Table;
+function App ()
+{
+  return (
+    <div className="App">
+      <App/>
+    </div>
+  );
+}
+export default App;
