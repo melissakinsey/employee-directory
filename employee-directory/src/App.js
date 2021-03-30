@@ -1,5 +1,6 @@
-import React from 'react';
-import Nav from './components/Nav/Nav.jsx'
+import React from "react";
+import Nav from "./components/Nav/Nav.jsx"
+import Table from "./components/Table/Table.jsx"
 class App extends React.component
 {
  // Set up constructor to accept data array
@@ -48,13 +49,22 @@ class App extends React.component
 }
 
 
-function App()
+function Nav()
 {
   return (
-    <div className="App">
+    <div className="Nav">
       <Nav/>
     </div>
   );
 }
+export default Nav;
 
-export default App;
+function Table ()
+{
+  return (
+    <div className="Table">
+      <Table/>
+    </div>
+  );
+}
+export default Table;
