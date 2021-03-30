@@ -2,7 +2,7 @@ Import React from 'react'
 function Table(props)
 {
     return (
-        <table class="table">
+        <table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">#</th>
