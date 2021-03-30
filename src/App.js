@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./components/Nav/Nav.jsx";
 import Table from "./components/Table/Table.jsx";
-import App from "./App.js"
+import Person from "./components/Person/Person.jsx";
 
 class App extends React.Component
 {
@@ -9,72 +9,50 @@ class App extends React.Component
   constructor()
   {
     super();
-    this.state = {items: []}
-  }
+    this.state = { items: [] }
+  };
   // Make Ajax call to the randomuser API
   componentWillMount()
   {
     fetch("https://randomuser.me/api")
-    .then(response => response.json())
-    // Use results to set state
-    .then(({results: items}) => this.setState({items}))
-  }
-  filter(e){
+      .then(response => response.json())
+      // Use results to set state
+      .then(({ results: items }) => this.setState({ items }))
+  };
+  filter(e)
+  {
     this.setState({ filter: e.target.value })
-  }
+  };
   // Use render method
-  render(){
+  render()
+  {
     let items = this.state.items;
-    if(this.state.filter) {
+    if (this.state.filter)
+    {
       items = items.filter(item =>
         item.dob()
-        .includes(this.state.filter())
-        )
-      }
-      return (
-        <div>
+          .includes(this.state.filter())
+      )
+    }
+    return (
+      <div>
         <input type="text" onChange />
         {items.map(item =>
           <Person key={item.email} person={item} />)}
-          </div>
-          )
+      </div>
+    )
+    
+
           
-          // Filter results by date of birth (dob)
+    // Filter results by date of birth (dob)
           
-          // Use filter method to listen for filter event (e) and accept input field (e.target.value)
+    // Use filter method to listen for filter event (e) and accept input field (e.target.value)
           
-          // }//Map items in the array returned from the API call
-          // Use email as unique key to identify each result returned
-          //Filter by dob
-        }
-      }
-      const Person = (props) => <p>{props.person.name}</p>
-      function Nav()
-      {
-        return (
-          <div className="Nav">
-          <Nav/>
-          </div>
-          );
-        }
-        export default Nav;
+    // }//Map items in the array returned from the API call
+    // Use email as unique key to identify each result returned
+    //Filter by dob
+  }
+}
         
-        function Table ()
-        {
-          return (
-            <div className="Table">
-            <Table/>
-            </div>
-            );
-          }
-          export default Table;
-          function App ()
-          {
-            return (
-              <div className="App">
-              <App/>
-              </div>
-              );
-            }
             export default App;
             
