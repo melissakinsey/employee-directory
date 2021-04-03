@@ -35,9 +35,7 @@ class App extends React.Component{
           Employee Directory
         </h1>
         <Table items={items}/>
-        {/* <input type="text" onChange />
-        {items.map(item =>
-          <Person key={item.email} person={item} />)} */}
+        {/* <input type="text" onChange />*/}
       </div>
     )
 
