@@ -1,8 +1,12 @@
-const Person = () => {
+const Person = (props) => {
     return (
-    <div>
-    
-</div> )   
+        <tr>
+          <td scope="row">{props.number+1}</td>
+          <td>{props.item.name.first}</td>
+          <td>{props.item.name.last}</td>
+          <td>{props.item.gender}</td>
+        </tr>
+    )
     
 }
 
