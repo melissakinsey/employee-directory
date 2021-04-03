@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+![readme-header](assets/readme-header.png)
+	
+[![stars - readme-generator](https://img.shields.io/github/stars/melissakinsey/readme-generator?style=social)](https://github.com/melissakinsey/readme-generator)
+[![forks - readme-generator](https://img.shields.io/github/forks/melissakinsey/readme-generator?style=social)](https://github.com/melissakinsey/readme-generator)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![melissakinsey - readme-generator](https://img.shields.io/static/v1?label=melissakinsey&message=readme-generator&color=blue&logo=github)](https://github.com/melissakinsey/readme-generator)
+<div align="center">
+</div>
 
-## Available Scripts
+[Released under ![License - MIT](https://img.shields.io/badge/License-MIT-blue)](#license) by [@melissakinsey](https://github.com/melissakinsey).	
+	
+* [Description](#Description)
+* [User Story](#User_Story)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Features](#Features)
+* [Technical Specs](#Technical_Specs)
+* [Lessons Learned](#Lessons_Learned)
+* [Contributions](#Contributions)
+	
+![Screenshots of employee tracker](assets/employee-schema-cover.png)
 
-In the project directory, you can run:
+# DESCRIPTION
+This tool [does this] using [these languages and technologies. 
+![picture-of-app](assets/screenshot.png)
 
-### `npm start`
+## Project Repo & Demo
+The [code for this budget tracker](https://github.com/melissakinsey/budget-tracker) is housed on GitHub.  
+		
+## User Story
+*AS A* budget-conscious saver and frequent traveler *I WANT TO* enter deposits and withdrawals even when I'm offline *SO I CAN* manage my transactions without interruption.	
+	
+## Usage
+To use this app, enter a deposit or a withdrawal in online or offline mode. If you're offline, your transaction will sync next time you have an internet connection. To see how the tracker works, watch this quick [video demo](https://youtu.be/loremipsum).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# TECHNICAL SPECS
+* Runs on the command line. 
+* Uses MongoDB Atlas for offline storage. 
+* Uses a service worker to communicate in an offline environment.
+* Uses a manifest.json file to tell the browser how to display the budget tracker. This file includes the name of the app, the icons used, and the URL at which the app lives.
+	
+# LESSONS LEARNED 
+This project was good for learning about using the dev tools. I'd already been using the 'Inspect Elements' panel in styling my projects, but now I know how to use the dev tools to simulate throttling and offline mode. I also learned about service worker files and manifest.json files.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# CONTRIBUTIONS
+This was an individual project. Thanks, as always, to my study group and TAs!
+	
+# IMAGE CREDITS
+* Header adapted from image by filo/iStockPhoto.
 
-### `npm test`
+![Original iStock image](assets/header-original.png)  
+* Badges created using Michael Currin's nifty [Badge Generator](https://michaelcurrin.github.io/badge-generator/#/repo)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Badge Generator](assets/badge-generator.png) 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# CONTACT ME
+Ping me with questions or project feedback:
+* GitHub: [@melissakinsey](https://melissakinsey.github.io/portfolio/)
+* Twitter: [@KinseyMelissa](https://twitter.com/KinseyMelissa)
+* Email: [kinsey.melissa@gmail.com](mailto:kinsey.melissa@gmail.com)
+* LinkedIn: [linkedin.com/melissajaynekinsey](https://www.linkedin.com/in/melissajaynekinsey/)

@@ -5,7 +5,7 @@ const Nav = () =>
     return (
         <nav className="navbar sticky-top navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Sticky top</a>
+          {/* <a className="navbar-brand" href="#">Sticky top</a> */}
         </div>
       </nav>
   )  

@@ -36,9 +36,13 @@ class App extends React.Component
     }
     return (
       <div>
-        <input type="text" onChange />
+        <h1>
+          Employee Directory
+        </h1>
+        <Table />
+        {/* <input type="text" onChange />
         {items.map(item =>
-          <Person key={item.email} person={item} />)}
+          <Person key={item.email} person={item} />)} */}
       </div>
     )
     
